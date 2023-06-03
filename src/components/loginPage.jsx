@@ -6,6 +6,8 @@ import './styles/startup.css'
 
 import Logo from './assets/logo.png'
 
+import { Link } from 'react-router-dom';
+
 const Login = () => {
   return (
     <>
@@ -28,7 +30,10 @@ const SideMessage = () => {
             <p class="quote">
             Lorem ipsum dolor sit amet, consectetur adipiscing<br/>elit, sed do eiusmod aliqua.
             </p>
+            <Link to="/signup">
             <button class="signup-button">SIGN UP</button>
+            </Link>
+            
         </div>
     );
 }

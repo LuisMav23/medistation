@@ -1,0 +1,80 @@
+.main-signup-container {
+    width: 60%;
+    height: 100vh;
+    background-image: url('../assets/login-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        
+}
+
+.login-h1 {
+    font-family: 'PT Serif Caption';
+    font-size: 50px;
+    letter-spacing: 20%;
+    color: #fff;
+    margin: 10px;
+    letter-spacing: 25%;
+    font-weight: 100;
+}
+
+.login-sub {
+    font-family: 'Cedarville Cursive';
+    font-size: 25px;
+    letter-spacing: 20%;
+    color: #fff;
+    margin: 10px;
+    letter-spacing: 25%;
+    font-weight: 100;
+}
+
+.input{
+    all: initial;
+    background: #D6C8B7;
+    opacity: 0.7;
+    border-radius: 54px;
+    width: 60%;
+    height: 60px;
+    padding-left: 30px;
+    padding-right: 10px;
+    font-family: 'PT Sans';
+    font-size: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.signin-button {
+    all: initial;
+    background: #D6C8B7;
+    border-radius: 62px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    font-family: 'PT Sans';
+    font-weight: 500;
+}
+
+.first-last-name,
+.birthday-gender {
+    display: flex;
+    gap: 20px;
+    width: 60%;
+}
+
+select.input {
+    display: flex;
+    align-items: center;
+}
+
+date.input {
+    display: flex;
+    align-items: center;
+}
+
