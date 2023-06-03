@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../assets/PT_Sans/PTSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Serif Caption';
+    src: url('../assets/PT_Serif_Caption/PTSerifCaption-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cedarville Cursive';
+    src: url('../assets/Cedarville_Cursive/CedarvilleCursive-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
