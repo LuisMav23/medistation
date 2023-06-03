@@ -11,6 +11,7 @@
     align-items: center;
 }
 
+
 .login-h1 {
     font-family: 'PT Serif Caption';
     font-size: 50px;
@@ -19,6 +20,7 @@
     margin: 10px;
     letter-spacing: 25%;
     font-weight: 100;
+    text-align: center;
 }
 
 .login-sub {
@@ -54,3 +56,99 @@
     font-family: 'PT Sans';
     font-weight: 500;
 }
+
+@media (max-width: 768px) {
+    .main-login-container {
+        width: 100%;
+        height: 100vh;
+        background-color: #532500;
+        background-image: none;
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-image {
+        width: 30%;
+        height: 20%;
+    }
+    
+    .medistation-h1{
+        font-family: 'PT Sans';
+        font-size: 30px;
+        letter-spacing: 20%;
+        color: #fff;
+        margin: 10px;
+    }
+
+    .login-h1 {
+        width: 100%;
+        background-color: #AF8C6C;
+        color: #532500;
+        font-family: 'PT Serif Caption';
+        font-size: 25px;
+        letter-spacing: 10%;
+        margin: 0px;
+        letter-spacing: 25%;
+        font-weight: 100;
+        text-align: center;
+        padding: 5px;
+    }
+    
+    .login-sub {
+        font-family: 'Cedarville Cursive';
+        font-size: 16px;
+        letter-spacing: 20%;
+        color: #fff;
+        margin: 5px;
+        letter-spacing: 15%;
+        font-weight: 100;
+    }
+    
+    .input{
+        all: initial;
+        background: #D6C8B7;
+        opacity: 0.7;
+        border-radius: 62px;
+        width: 60%;
+        height: 45px;
+        padding-left: 40px;
+        font-family: 'PT Sans';
+        font-size: 20px;
+        margin-bottom: 35px;
+    }
+    
+    .signin-button {
+        all: initial;
+        background: #D6C8B7;
+        border-radius: 62px;
+        width: 175px;
+        height: 50px;
+        text-align: center;
+        font-family: 'PT Sans';
+        font-weight: 500;
+        margin-bottom: 25px;
+    }
+    .signup-button {
+        all: initial;
+        color: white;
+        width: 100px;
+        height: 20px;
+        text-align: center;
+        font-family: 'PT Sans';
+        font-weight: 500;
+    }
+    
+    .signup-button:active {
+        all: initial;
+        color: #D6C8B7;
+        width: 100px;
+        height: 20px;
+        text-align: center;
+        font-family: 'PT Sans';
+        font-weight: 500;
+    }
+    
+  }
