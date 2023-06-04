@@ -1,0 +1,101 @@
+@import url('fonts.css');
+
+.list-container {
+    width: 20%;
+    height: 100%;
+    background: #D6C8B7;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.your-profile-container {
+    width: 90%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.your-name-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 5px;
+}
+
+.your-profile-image {
+    width: 50px;
+    height: 50px;
+}
+
+.your-username {
+    font-size: 1vw;
+    font-family: 'PT Sans Bold';
+    margin: 0;
+}
+
+.your-fullname {
+    font-size: 0.85vw;
+    font-family: 'PT Sans';
+    margin: 0;
+}
+
+.switch-profile {
+    all: initial;
+    cursor: pointer;
+    display: flex;
+    font-size: 0.85vw;
+    font-family: 'PT Sans';
+    margin-left: 10%;
+}
+
+
+
+
+.profile-container {
+    width: 90%;
+    height: 7.5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.name-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 5px;
+}
+
+.profile-image {
+    width: 40px;
+    height: 40px;
+}
+
+.username {
+    font-size: .90vw;
+    font-family: 'PT Sans Bold';
+    margin: 0;
+}
+
+.fullname {
+    font-size: 0.75vw;
+    font-family: 'PT Sans';
+    margin: 0;
+}
+
+.visit-profile {
+    all: initial;
+    cursor: pointer;
+    display: flex;
+    font-size: 0.85vw;
+    font-family: 'PT Sans';
+    margin-left: 10%;
+
+}

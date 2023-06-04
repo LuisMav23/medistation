@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 
 import "./styles/mainpage.css"
-import "./styles/homepage.css"
+import "./styles/searchpage.css"
 
 
 
@@ -9,7 +9,7 @@ import NavigationBar from "./navigationBar";
 import TopBar from "./topBar";
 import FriendsList from "./friendsList";
 
-const HomePage = () => {
+const SearchPage = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
     const handleResize = () => {
         setScreenWidth(window.innerWidth);
@@ -26,9 +26,9 @@ const HomePage = () => {
     <>
       <TopBar />
       <div class="mainpage-container">
-        {screenWidth >= 768 && <NavigationBar selected={'Home'}/>}
-        <div class="homepage-container">
-          //dito na yung sa gitna sa homepage to
+        {screenWidth >= 768 && <NavigationBar selected={'Search'}/>}
+        <div class="searchpage-container">
+          //dito na yung sa gitna sa search page to
         </div>
         {screenWidth >= 768 && <FriendsList/>}
       </div>
@@ -38,4 +38,4 @@ const HomePage = () => {
 
 
 
-export default HomePage;
+export default SearchPage;

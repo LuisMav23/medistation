@@ -1,0 +1,61 @@
+import React from "react";
+import { useNavigate } from "react-router";
+
+import "./styles/navigationBar.css";
+
+import Home from "./assets/icons/home-icon.png";
+import Search from "./assets/icons/search-icon.png";
+import Messages from "./assets/icons/message-icon.png";
+import Notifications from "./assets/icons/notifications-icon.png";
+import Create from "./assets/icons/create-icon.png";
+import Profile from "./assets/icons/profile-icon.png";
+import Settings from "./assets/icons/settings-icon.png";
+import Logout from "./assets/icons/logout-icon.png";
+
+const NavigationBar = ({ selected }) => {
+    const navigate = useNavigate();
+
+    return (
+      <div class="bar-container">
+          <div class="app-name">
+            <p class="app-name-text">MEDISTATION</p>
+          </div>
+        <div class="bar">
+          <button class={`bar-item ${selected === 'Home' ? 'selected' : ''}`} onClick={()=>{navigate('/homepage')}}>
+            <img class="bar-item-image" src={Home} alt="Home" />
+            <p class="bar-item-text">Home</p>
+            </button>
+            <button class={`bar-item ${selected === 'Search' ? 'selected' : ''}`} onClick={()=>{navigate('/search')}}>
+            <img class="bar-item-image" src={Search} alt="Search" />
+              <p class="bar-item-text">Search</p>
+            </button>
+            <button class={`bar-item ${selected === 'Messages' ? 'selected' : ''}`} onClick={()=>{alert('clicked')}}>
+            <img class="bar-item-image" src={Messages} alt="Messages" />
+              <p class="bar-item-text">Messages</p>
+            </button>
+            <button class={`bar-item ${selected === 'Notifications' ? 'selected' : ''}`} onClick={()=>{alert('clicked')}}>
+            <img class="bar-item-image" src={Notifications} alt="Notifications" />
+              <p class="bar-item-text">Notifications</p>
+            </button>
+            <button class={`bar-item ${selected === 'Create' ? 'selected' : ''}`} onClick={()=>{alert('clicked')}}>
+            <img class="bar-item-image" src={Create} alt="Create" />
+              <p class="bar-item-text">Create</p>
+            </button>
+            <button class={`bar-item ${selected === 'Profile' ? 'selected' : ''}`} onClick={()=>{alert('clicked')}}>
+            <img class="bar-item-image" src={Profile} alt="Profile" />
+              <p class="bar-item-text">Profile</p>
+            </button>
+            <button class={`bar-item ${selected === 'Settings' ? 'selected' : ''}`} onClick={()=>{alert('clicked')}}>
+            <img class="bar-item-image" src={Settings} alt="Settings" />
+              <p class="bar-item-text">Settings</p>
+            </button>
+            <div class="bar-item-logout">
+          <img class="bar-item-image" src={Logout} alt="Logout" />
+          <p class="bar-item-text">SIGN OUT</p>
+          </div>
+          </div>
+        </div>
+    );
+  };
+  
+export default NavigationBar;

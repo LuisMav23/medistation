@@ -1,0 +1,6 @@
+.mainpage-container{
+    display: flex;
+    flex-direction: row;
+    height: 92.5vh;
+    background-color: red;
+}
