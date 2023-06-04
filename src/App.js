@@ -10,7 +10,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path="/login" Component={Login}/>
+        <Route exact path="/" Component={Login}/>
         <Route exact path="/signup" Component={Signup}/>
         <Route exact path="/forgot-password" Component={Forgot}/>
         <Route exact path="/homepage" Component={HomePage}/>

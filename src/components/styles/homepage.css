@@ -1,7 +1,21 @@
-.main-container{
+.homepage-main-container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     height: 100vh;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 7.5vh;
+    background-color: #532500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo-image-nav {
+    width: 50px;
+    height: 50px;
 }
