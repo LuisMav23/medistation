@@ -82,7 +82,7 @@ const MainLogin = () => {
             {screenWidth <= 768 && <img class="logo-image" src={Logo} alt="My Image"/>}
             {screenWidth <= 768 && <h1 class="medistation-h1">MEDISTATION</h1>}
             <h1 class="login-h1">Login to Your Account</h1>
-            <p class="login-sub">login using your social networks</p>
+            <p class="login-sub">start your relaxing and mindful journey with us.</p>
             <input type='text' class="input" placeholder='Email'></input>
             <input type='password' class="input" placeholder='Pasword'></input>
             <button class="signin-button" onClick={handleSignInButtonClick}>SIGN IN</button>

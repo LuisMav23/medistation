@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from 'react';
 import "./styles/sidemessage.css";
 import "./styles/mainsignup.css";
 import "./styles/startup.css";
@@ -9,10 +9,21 @@ import { Link } from "react-router-dom";
 
 
 const Signup = () => {
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+    const handleResize = () => {
+        setScreenWidth(window.innerWidth);
+    };
+    useEffect(() => {
+        window.addEventListener('resize', handleResize);
+    
+        return () => {
+          window.removeEventListener('resize', handleResize);
+        };
+      }, []);
   return (
     <>
       <div className="main-container">
-        <SideMessage />
+        {screenWidth >= 768 && <SideMessage />}
         <MainSignup />
       </div>
     </>
@@ -30,7 +41,7 @@ const SideMessage = () => {
         <br />
         elit, sed do eiusmod aliqua.
       </p>
-      <Link to="/login">
+      <Link to="/">
         <button className="signup-button">LOG IN</button>
       </Link>
     </div>
@@ -44,8 +55,22 @@ const MainSignup = () => {
     setSelectedDate(event.target.value);
   };
 
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+    const handleResize = () => {
+        setScreenWidth(window.innerWidth);
+    };
+    useEffect(() => {
+        window.addEventListener('resize', handleResize);
+    
+        return () => {
+          window.removeEventListener('resize', handleResize);
+        };
+      }, []);
+
   return (
     <div className="main-signup-container">
+      {screenWidth <= 768 && <img class="logo-image" src={Logo} alt="My Image"/>}
+      {screenWidth <= 768 && <h1 class="medistation-h1">MEDISTATION</h1>}
       <h1 className="login-h1">Sign Up Now!</h1>
       <p className="login-sub">
         start your relaxing and mindful journey with us.
