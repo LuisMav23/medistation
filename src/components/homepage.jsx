@@ -28,7 +28,8 @@ const HomePage = () => {
       <div class="mainpage-container">
         {screenWidth >= 768 && <NavigationBar selected={'Home'}/>}
         <div class="homepage-container">
-          //dito na yung sa gitna sa homepage to
+          //dito na yung sa gitna sa homepage to<br/>
+          //scrollable na yan
         </div>
         {screenWidth >= 768 && <FriendsList/>}
       </div>

@@ -1,3 +1,4 @@
 .homepage-container {
     width: 60%;
+    overflow: auto;
 }
