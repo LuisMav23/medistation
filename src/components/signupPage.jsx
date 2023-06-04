@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import "./styles/sidemessage.css";
 import "./styles/mainsignup.css";
 import "./styles/startup.css";
 
 import Logo from "./assets/logo.png";
 
-import { Link } from "react-router-dom";
 
 
 const Signup = () => {
@@ -20,6 +20,11 @@ const Signup = () => {
 };
 
 const SideMessage = () => {
+  const navigate = useNavigate();
+
+  const handleLoginButtonClick = () => {
+    navigate("/login");
+  };
   return (
     <div className="side-message-container">
       <img className="logo-image" src={Logo} alt="My Image" />
@@ -30,9 +35,7 @@ const SideMessage = () => {
         <br />
         elit, sed do eiusmod aliqua.
       </p>
-      <Link to="/login">
-        <button className="signup-button">LOG IN</button>
-      </Link>
+        <button className="signup-button" onClick={handleLoginButtonClick}>LOG IN</button>
     </div>
   );
 };

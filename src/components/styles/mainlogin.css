@@ -57,6 +57,17 @@
     font-weight: 500;
 }
 
+.forgot-password {
+    font-family: 'PT Sans';
+    font-size: 18px;
+    letter-spacing: 20%;
+    color: #fff;
+    margin-top: -10px;
+    margin-right: 392px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
 @media (max-width: 768px) {
     .main-login-container {
         width: 100%;
