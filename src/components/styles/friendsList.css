@@ -99,3 +99,12 @@
     margin-left: 10%;
 
 }
+
+.follow-suggestions-text {
+    font-family: 'PT Sans';
+    font-size: 1.25vw;
+    margin: 0;
+    width: 90%;
+    margin-left: 10%;
+    text-align: left;
+}

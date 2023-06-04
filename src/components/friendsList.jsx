@@ -24,7 +24,9 @@ const FriendsList = () => {
                 Switch
             </button>
         </div>
-        
+        <p class="follow-suggestions-text">
+        Following Suggestions
+        </p>
         <Profile username="Marebik" name="Luis Gabriel"/>
         <Profile username="Marebik" name="Luis Gabriel"/>
         <Profile username="Marebik" name="Luis Gabriel"/>
