@@ -65,6 +65,10 @@ const MainLogin = () => {
         navigate('/signup');
     };
 
+    const handleForgotPasswordClick = () => {
+        navigate('/forgot-password');
+    };
+
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
     const handleResize = () => {
         setScreenWidth(window.innerWidth);
@@ -85,6 +89,7 @@ const MainLogin = () => {
             <p class="login-sub">start your relaxing and mindful journey with us.</p>
             <input type='text' class="input" placeholder='Email'></input>
             <input type='password' class="input" placeholder='Pasword'></input>
+            <p class='forgot-password' onClick={handleForgotPasswordClick}>Forgot Password?</p>
             <button class="signin-button" onClick={handleSignInButtonClick}>SIGN IN</button>
             {screenWidth <= 768 && <button class="signup-button" onClick={handleSignUpButtonClick}>SIGN UP</button>}
         </div>
