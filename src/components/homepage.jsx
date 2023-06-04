@@ -12,9 +12,6 @@ import Profile from "./assets/icons/profile-icon.png";
 import Settings from "./assets/icons/settings-icon.png";
 import Logout from "./assets/icons/logout-icon.png";
 
-import './styles/homepage.css'
-import Logo from './assets/logo.png'
-
 const HomePage = () => {
   return (
     <>
