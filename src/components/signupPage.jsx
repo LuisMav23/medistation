@@ -34,7 +34,7 @@ const SideMessage = () => {
   const navigate = useNavigate();
 
   const handleLoginButtonClick = () => {
-    navigate("/login");
+    navigate("/");
   };
   return (
     <div className="side-message-container">
