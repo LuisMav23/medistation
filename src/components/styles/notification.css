@@ -1,0 +1,5 @@
+.notificationpage-container {
+    width: 60%;
+    overflow: auto;
+    align-items: center;
+}
