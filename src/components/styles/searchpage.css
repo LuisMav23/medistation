@@ -17,7 +17,7 @@
     background: rgba(157, 95, 58, 0.61);
     border-radius: 62px;
     width: 60%;
-    height: 45px;
+    height: 35px;
     padding-left: 40px;
 }
 
@@ -89,13 +89,13 @@
 
 .search-for {
     font-family: 'PT Sans Bold';
-    font-size: 25px;
+    font-size: 1.25vw;
 }
 
 .search-for span{
     font-family: 'PT Sans';
     color: #bb8f72;
-    font-size: 25px;
+    font-size: 1.25vw;
 }
 
 .search-item {
@@ -103,11 +103,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 .search-item-image {
-    height: 85px;
-    width: 85px;
-    border: 5px solid #653F26;
+    height: 4vw;
+    width: 4vw;
+    border: 2px solid #653F26;
     border-radius: 100%;
 }
 
@@ -127,12 +128,12 @@
 .search-item-username{
     margin:0;
     font-family: 'PT Sans Bold';
-    font-size: 24px;
+    font-size: 1.25vw;
 }
 .search-item-name {
     margin:0;
     font-family: 'PT Sans';
-    font-size: 18px;
+    font-size: 1.25vw;
 }
 
 .search-item-follow-button {
@@ -142,4 +143,153 @@
     font-size: 1vw;
     font-family: 'PT Sans';
     margin-left: 10%;
+}
+
+@media (max-width: 768px) {
+    .searchpage-container {
+        width: 100%;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 50px;
+    }
+    
+    .search-bar-container {
+        display: flex;
+        align-items: center;
+        border: 1px solid #ccc;
+        padding: 5px;
+        border-radius: 5px;
+        background: rgba(157, 95, 58, 0.61);
+        border-radius: 62px;
+        width: 80%;
+        height: 20px;
+        padding-left: 15px;
+    }
+    
+    .search-bar {
+        all: initial;
+        flex: 1;
+        border: none;
+        outline: none;
+        font-family: 'PT Sans';
+        font-size: 12px;
+        width: 90%;
+    }
+    
+    .search-icon{
+        width: 100%;
+        height: 100%;
+    }
+    .search-button{
+        all: initial;
+        width: 10%;
+        height: 20px;
+        cursor: pointer;
+    }
+    
+    /* EMPTY SEARCH */
+    .empty-search {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .empty-search-heading {
+        font-size: 32px;
+        color: #281C19;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    
+    .empty-search-p {
+        font-size: 21px;
+        color: #281C19;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        margin:0;
+    }
+    
+    /* SEARCH LIST */
+    
+    .search-list {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .search-for-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .search-for {
+        font-family: 'PT Sans Bold';
+        font-size: 3vw;
+    }
+    
+    .search-for span{
+        font-family: 'PT Sans';
+        color: #bb8f72;
+        font-size: 3vw;
+    }
+    
+    .search-item {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    .search-item-image {
+        height: 8vw;
+        width: 8vw;
+        border: 2px solid #653F26;
+        border-radius: 100%;
+    }
+    
+    .search-profile-container {
+        margin:0;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .search-item-name-container {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        margin-left: 5px;
+    }
+    
+    .search-item-username{
+        margin:0;
+        font-family: 'PT Sans Bold';
+        font-size: 3vw;
+    }
+    .search-item-name {
+        margin:0;
+        font-family: 'PT Sans';
+        font-size: 3vw;
+    }
+    
+    .search-item-follow-button {
+        all: initial;
+        cursor: pointer;
+        display: flex;
+        font-size: 2.75vw;
+        font-family: 'PT Sans';
+        margin-left: 10%;
+    }
 }
