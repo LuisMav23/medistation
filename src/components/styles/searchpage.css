@@ -1,4 +1,145 @@
 .searchpage-container {
     width: 60%;
     overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 50px;
+}
+
+.search-bar-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    background: rgba(157, 95, 58, 0.61);
+    border-radius: 62px;
+    width: 60%;
+    height: 45px;
+    padding-left: 40px;
+}
+
+.search-bar {
+    all: initial;
+    flex: 1;
+    border: none;
+    outline: none;
+    font-family: 'PT Sans';
+    font-size: 16px;
+    width: 90%;
+}
+
+.search-icon{
+    width: 100%;
+    height: 100%;
+}
+.search-button{
+    all: initial;
+    width: 10%;
+    height: 25px;
+    cursor: pointer;
+}
+
+/* EMPTY SEARCH */
+.empty-search {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.empty-search-heading {
+    font-size: 32px;
+    color: #281C19;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.empty-search-p {
+    font-size: 21px;
+    color: #281C19;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin:0;
+}
+
+/* SEARCH LIST */
+
+.search-list {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.search-for-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.search-for {
+    font-family: 'PT Sans Bold';
+    font-size: 25px;
+}
+
+.search-for span{
+    font-family: 'PT Sans';
+    color: #bb8f72;
+    font-size: 25px;
+}
+
+.search-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search-item-image {
+    height: 85px;
+    width: 85px;
+    border: 5px solid #653F26;
+    border-radius: 100%;
+}
+
+.search-profile-container {
+    margin:0;
+    display: flex;
+    flex-direction: row;
+}
+
+.search-item-name-container {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    margin-left: 20px;
+}
+
+.search-item-username{
+    margin:0;
+    font-family: 'PT Sans Bold';
+    font-size: 24px;
+}
+.search-item-name {
+    margin:0;
+    font-family: 'PT Sans';
+    font-size: 18px;
+}
+
+.search-item-follow-button {
+    all: initial;
+    cursor: pointer;
+    display: flex;
+    font-size: 1vw;
+    font-family: 'PT Sans';
+    margin-left: 10%;
 }

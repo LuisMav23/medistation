@@ -10,13 +10,13 @@
 }
 
 .stories-container {
-  width: 70%;
-  height: fit-content;
-  overflow: auto;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  scrollbar-width: none;
+    width: 70%;
+    height: fit-content;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    scrollbar-width: none;
 }
 
 .stories-container::-webkit-scrollbar {
