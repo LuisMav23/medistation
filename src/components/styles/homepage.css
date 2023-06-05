@@ -10,7 +10,7 @@
 
 .stories-container {
     width: 70%;
-    height: fit-content;
+    height: 150px;
     overflow: auto;
     display: flex;
     align-items: center;
