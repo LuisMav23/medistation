@@ -1,5 +1,27 @@
 .messagepage-container {
-    width: 60%;
+    width: 70%;
     overflow: auto;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
+
+.messagepage-container::-webkit-scrollbar{
+    display: none;
+}
+
+.right-container {
+    width:10%;
+    background-color: #D6C8B7;
+}
+
+.message-box-container {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 800px;
+    background-color: #D6C8B7;
+}
+

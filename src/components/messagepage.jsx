@@ -4,7 +4,7 @@ import "./styles/messagepage.css";
 
 import NavigationBar from "./navigationBar";
 import TopBar from "./topBar";
-import FriendsList from "./friendsList";
+
 
 function MessagePage() {
   return (
@@ -12,8 +12,12 @@ function MessagePage() {
       <TopBar />
       <div class="mainpage-container">
         <NavigationBar selected={"Messages"} />
-        <div class="messagepage-container"></div>
-        <FriendsList />
+        <div class="messagepage-container">
+          <div class="message-box-container">
+
+          </div>
+        </div>
+        <div class="right-container"></div>
       </div>
     </>
   );
