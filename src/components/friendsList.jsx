@@ -27,9 +27,9 @@ const FriendsList = () => {
         <p class="follow-suggestions-text">
         Following Suggestions
         </p>
-        <Profile username="Marebik" name="Luis Gabriel"/>
-        <Profile username="Marebik" name="Luis Gabriel"/>
-        <Profile username="Marebik" name="Luis Gabriel"/>
+        <Profile username="Serlindipity" name="Erlin Fernandez"/>
+        <Profile username="Serlindipity" name="Erlin Fernandez"/>
+        <Profile username="Serlindipity" name="Erlin Fernandez"/>
       </div>
           
     );

@@ -33,20 +33,9 @@ const HomePage = () => {
       <div class="mainpage-container">
         {screenWidth >= 768 && <NavigationBar selected={"Home"} />}
         <div class="homepage-container">
-          <div class="stories-container">
-            <Story username="Marebik" />
-            <Story username="Marebik" />
-            <Story username="Marebik" />
-            <Story username="Marebik" />
-            <Story username="Marebik" />
-            <Story username="Marebik" />
-          </div>
-          <div class="horizontal-line"></div>
-          <div class="posts-container">
-            <Post username="Marebik" location="Kathmandu" time="2h" />
-            <Post username="Marebik" location="Kathmandu" time="2h" />
-            <Post username="Marebik" location="Kathmandu" time="2h" />
-          </div>
+        <StoriesContainer/>
+        <div class="horizontal-line"/>
+        <PostsContainer/>
         </div>
         {screenWidth >= 768 && <FriendsList />}
       </div>
@@ -54,12 +43,43 @@ const HomePage = () => {
   );
 };
 
+const StoriesContainer = () => {
+  return (
+    <div class="stories">
+      <div class="stories-container">
+              <Story username="Serlindipity" />
+              <Story username="Serlindipity" />
+              <Story username="Serlindipity" />
+              <Story username="Serlindipity" />
+              <Story username="Serlindipity" />
+              <Story username="Serlindipity" />
+              <Story username="Serlindipity" />
+              <Story username="Serlindipity" />
+              <Story username="Serlindipity" />
+              <Story username="Serlindipity" />
+              <Story username="Serlindipity" />
+              <Story username="Serlindipity" />
+      </div>
+    </div>
+  );
+};
+
+const PostsContainer = () => {
+  return (
+    <div class="posts-container">
+            <Post username="Marebik" location="Kathmandu" time="2h" />
+            <Post username="Marebik" location="Kathmandu" time="2h" />
+            <Post username="Marebik" location="Kathmandu" time="2h" />
+          </div>
+  );
+};
+
 const Story = ({ username }) => {
   return (
     <div class="story">
-      <div class="story-image-container">
+      <button class="story-image-container">
         <img class="story-image" src={ProfileImage} alt="story" />
-      </div>
+      </button>
       <p class="story-username">{username}</p>
     </div>
   );

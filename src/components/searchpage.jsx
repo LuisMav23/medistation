@@ -68,7 +68,9 @@ const SearchList = ({searchQuery}) => {
       <div className="search-for-container">
         <p className="search-for">Search for <span>{searchQuery}</span></p>
       </div>
-        <SearchItem username="Maverick" name="Luis Maverick" isFollowing={true}/>
+        <SearchItem username="Serlindipity" name="Erlin Fernandez" isFollowing={true}/>
+        <SearchItem username="Serlindipity" name="Erlin Fernandez" isFollowing={false}/>
+        <SearchItem username="Serlindipity" name="Erlin Fernandez" isFollowing={true}/>
     </div>
   );
 }
