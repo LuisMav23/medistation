@@ -11,6 +11,7 @@ import Comment from "./assets/icons/comment-icon.png"
 import NavigationBar from "./navigationBar";
 import TopBar from "./topBar";
 import FriendsList from "./friendsList";
+import NavBarMobile from "./navBarMobile";
 
 const HomePage = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -33,6 +34,7 @@ const HomePage = () => {
       <div class="mainpage-container">
         {screenWidth >= 768 && <NavigationBar selected={"Home"} />}
         <div class="homepage-container">
+        {screenWidth <= 768 && <NavBarMobile selected={"Home"} />}
         <StoriesContainer/>
         <div class="horizontal-line"/>
         <PostsContainer/>

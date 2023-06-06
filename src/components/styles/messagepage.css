@@ -2,6 +2,7 @@
   width: 70%;
   overflow: auto;
   display: flex;
+  flex-direction: column; 
   justify-content: center;
   align-items: center;
 }
@@ -321,4 +322,334 @@ color: #281C19;
 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 
+}
+
+
+@media (max-width: 768px) {
+  .messagepage-container {
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .messagepage-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .right-container {
+    width: 10%;
+    background-color: #d6c8b7;
+  }
+  
+  .message-box-container {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 96%;
+    width: 90%;
+    background-color: #d6c8b7;
+  }
+  
+  .friends-container {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* overflow: auto; */
+  }
+  
+  .friends-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+  }
+  
+  .friends-header-text {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    color: #281c19;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .horizontal-line {
+    width: 100%;
+    height: 2px;
+    background-color: #ebddcc;
+    margin: 0px;
+    /* border: 2px solid #EBDDCC; */
+  }
+  
+  .messages-request-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10%;
+    width: 90%;
+    align-self: center;
+  }
+  
+  .messages-text {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+  
+    color: #281c19;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+  }
+  
+  .requests-text {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    cursor: pointer;
+  
+    color: #9d5f3a;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .friends-list-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+  }
+  
+  .vertical-line {
+    width: 2px;
+    height: 100%;
+    background-color: #ebddcc;
+    margin: 0px;
+  }
+  
+  .friend {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .friend:hover {
+    background-color: #ede6de;
+  }
+  
+  .friend-image-container {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 100%;
+    background-color: #9d5f3a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+  }
+  
+  .friend-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .active-now {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    border-radius: 100%;
+    background-color: #00ff00;
+    margin-top: 41px;
+    margin-left: 36px;
+  }
+  
+  .friend-status-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .friend-username {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: #281c19;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0px;
+  }
+  
+  .friend-status {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0px;
+    color: #281c19;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .friends-messages {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* overflow: auto; */
+  }
+  
+  .your-messages-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .your-messages-image {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+  }
+  
+  .your-messages-text {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: #281c19;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0px;
+  }
+  
+  .your-messages-subtext {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #281c19;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .your-messages-button {
+    width: 200px;
+    height: 32px;
+    background-color: #af8c6c;
+    border-radius: 54px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 23px;
+    text-align: center;
+  
+    color: #281c19;
+  
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .message-header {
+      display: flex;
+      flex-direction: row;
+      height: 10%;
+      margin: 0px;
+  }
+  
+  .message-header-left {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 30%;
+  }
+  
+  .message-header-image-container{
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      margin-left: 5%;
+      background-color: #9d5f3a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 8%;
+  }
+  
+  .message-header-image{
+      height: 35px;
+      width: 35px;
+      border-radius: 50%;
+  }
+  
+  .message-active-now {
+      position: absolute;
+      width: 9px;
+      height: 9px;
+      border-radius: 100%;
+      background-color: #00FF00;
+      margin-top: 28px;
+      margin-left: 29px;
+  }
+  
+  .message-header-details {
+      display: flex;
+      flex-direction: column;
+      margin-left: 5%;
+  }
+  
+  .message-header-username {
+      font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+  
+  color: #281C19;
+  
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      margin: 0px;    
+  }
+  
+  .message-header-status {
+      margin: 0px;
+      
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  
+  color: #281C19;
+  
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  
+  
+  }
+  
 }

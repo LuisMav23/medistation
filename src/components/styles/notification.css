@@ -3,3 +3,11 @@
     overflow: auto;
     align-items: center;
 }
+
+@media (max-width: 768px) {
+    .notificationpage-container {
+        width: 100%;
+        overflow: auto;
+        align-items: center;
+    }
+}
