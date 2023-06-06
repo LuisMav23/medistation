@@ -17,13 +17,24 @@ function ProfilePage() {
         <div class="profilepage-container">
           <ProfileHeader
             username="Serlindipty"
-            post="2"
-            followers="2"
+            posts="9"
+            followers="5"
+            following="5"
             name="Erlin Joy Fernandez"
             gender="she/her"
             bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed"
           />
+
+          <div class="profilepage-posts-container">
+            <PostGrid/>
+            <PostGrid/>
+            <PostGrid/>
+            <PostGrid/>
+            <PostGrid/>
+            <PostGrid/>
+            </div>
         </div>
+        
       </div>
     </>
   );
@@ -41,17 +52,18 @@ const ProfileHeader = ({
   return (
     <div class="profilepage-header">
       <div class="profile-image-container">
-        <img src={Image} alt="Profile" class="profile-image" />
+        <img src={Image} alt="Profile" class="main-profile-image" />
       </div>
+      <div class="profile-details-container">
       <div class="profile-edit-settings-container">
         <div class="profile-username">{username}</div>
         <button class="profile-edit-button">Edit Profile</button>
         <img src={Settings} alt="Settings" class="profile-settings-icon" />
       </div>
       <div class="post-follower-following-container">
-        <div class="profile-post-count">{posts} posts</div>
-        <div class="profile-follower-count">{followers} followers</div>
-        <div class="profile-following-count">{following} following</div>
+        <div class="profile-post-count"><b>{posts}</b> posts</div>
+        <div class="profile-followers-count"><b>{followers}</b> followers</div>
+        <div class="profile-following-count"><b>{following}</b> following</div>
       </div>
       <div class="profile-name-gender-container">
         <div class="profile-name">{name}</div>
@@ -60,8 +72,18 @@ const ProfileHeader = ({
       <div class="profile-bio-container">
         <div class="profile-bio">{bio}</div>
       </div>
+      </div>
     </div>
   );
 };
 
+
+const PostGrid = ({ image }) => {
+    return (
+        <div class="post-grid">
+            <div class="post-container-grid"></div>
+        </div>
+    );
+
+};
 export default ProfilePage;
