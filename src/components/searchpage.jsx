@@ -5,6 +5,7 @@ import "./styles/searchpage.css"
 import NavigationBar from "./navigationBar";
 import TopBar from "./topBar";
 import FriendsList from "./friendsList";
+import NavBarMobile from "./navBarMobile";
 
 import SearchIcon from "./assets/icons/searchIcon.svg"
 import NoSearch from "./assets/noSearch.png"
@@ -37,6 +38,7 @@ const SearchPage = () => {
       <div class="mainpage-container">
         {screenWidth >= 768 && <NavigationBar selected={'Search'}/>}
         <div class="searchpage-container">
+        {screenWidth <= 768 && <NavBarMobile selected={"Search"} />}
           <div class="search-bar-container">
             <input type="text" class="search-bar" placeholder="Search" onChange={handleInput}/>
             <button className="search-button" onClick={()=>{setisSearchEmpty(false);setSearchQuery(input)}}>
@@ -56,7 +58,7 @@ const EmptySearch = () => {
   return (
     <div class="empty-search">
       <img class="empty-search-image" alt="Empty Search" src={NoSearch}/>
-      <h2 class="empty-search-heading">Lookign for something?</h2>
+      <h2 class="empty-search-heading">Looking for something?</h2>
       <p class="empty-search-p">Your searches will appear here</p>
     </div>
   );

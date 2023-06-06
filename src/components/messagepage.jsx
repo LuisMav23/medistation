@@ -5,6 +5,7 @@ import "./styles/messagepage.css";
 
 import NavigationBar from "./navigationBar";
 import TopBar from "./topBar";
+import NavBarMobile from "./navBarMobile";
 
 import Profile from "./assets/profile-you.png";
 import YourMessages from "./assets/icons/your-messages-icon.png";
@@ -20,12 +21,25 @@ function MessagePage() {
     console.log("Route changed to:", location.pathname);
   }, [location]);
 
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const handleResize = () => {
+    setScreenWidth(window.innerWidth);
+  };
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <>
       <TopBar />
       <div class="mainpage-container">
-        <NavigationBar selected={"Messages"} />
+      {screenWidth >= 768 && <NavigationBar selected={"Messages"} />}
         <div class="messagepage-container">
+        {screenWidth <= 768 && <NavBarMobile selected={"Messages"} />}
           <div class="message-box-container">
             <div class="friends-container">
               <div class="friends-header">
@@ -90,7 +104,6 @@ function MessagePage() {
             </div>
           </div>
         </div>
-        <div class="right-container"></div>
       </div>
     </>
   );
