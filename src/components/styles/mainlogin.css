@@ -59,11 +59,11 @@
 
 .forgot-password {
     font-family: 'PT Sans';
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 20%;
     color: #fff;
     margin-top: -10px;
-    margin-right: 392px;
+    margin-right: 50%;
     font-weight: 400;
     cursor: pointer;
 }
@@ -160,6 +160,17 @@
         text-align: center;
         font-family: 'PT Sans';
         font-weight: 500;
+    }
+
+    .forgot-password {
+        font-family: 'PT Sans';
+        font-size: 14px;
+        letter-spacing: 20%;
+        color: #fff;
+        margin-top: -10px;
+        margin-right: 55%;
+        font-weight: 400;
+        cursor: pointer;
     }
     
   }

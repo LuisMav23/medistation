@@ -94,7 +94,7 @@ function MessagePage() {
               {selectedFriend ? (
                 <Message
                   username={selectedFriend}
-                  message="Hello!"
+                  message=""
                   image={Profile}
                   status={currentStatus}
                 />
