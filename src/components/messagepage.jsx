@@ -133,7 +133,8 @@ const Message = ({ username, message, image, status }) => {
         <div class="message-header-left">
           <div class="message-header-image-container">
             <img class="message-header-image" src={image} alt="friend" />
-            {status === "Active now" && <div className="message-active-now"></div>}
+            {status === "Active now" && <div className="message-
+            active-now"></div>}
           </div>
           <div class="message-header-details">
             <p class="message-header-username">{username}</p>
