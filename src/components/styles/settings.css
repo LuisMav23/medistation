@@ -1,0 +1,309 @@
+@import url('fonts.css');
+
+.settings-main-container{
+    width: 70%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.settings-container{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 96%;
+    width: 90%;
+    background-color: #d6c8b7;
+}
+
+.settings-option-container {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.main-settings-container {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.settings-option {
+    all: initial;
+    width:100%;
+    cursor: pointer;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.settings-option:hover {
+    all: initial;
+    width:100%;
+    cursor: pointer;
+    background-color: #EDE6DE;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.settings-option.selected {
+    all: initial;
+    width:100%;
+    background-color: #C7B9A8;
+    cursor: pointer;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.settings-header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 10%;
+    padding-left: 10%;
+}
+
+.settings-option-text {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.settings-header-text {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2vw;
+    text-align: center;
+    color: #281c19;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.settings-image {
+    width: 2vw;
+    height: 2vw;
+    margin-right: 10px;
+}
+
+/* PRIVACY */
+.privsec-container {
+    width: 85%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;    
+}
+
+.privsec-header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.privsec-header-container h1{
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2vw;
+    text-align: center;
+    color: #281c19;
+    margin-bottom: 10px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.privsec-content-header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.privsec-content-header-container p{
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.25vw;
+    text-align: center;
+    color: #281c19;
+    margin: 0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.privsec-content-header-container input{
+    width: 1vw;
+    height: 1vw;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.privsec-content-text {
+    padding: 5px;
+    font-family: "PT Sans";
+    overflow-wrap: break-word;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 10px;
+    margin-top: 0;
+    font-size: 1vw;
+}
+
+.save-button-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.save-button-container button{
+    all: initial;
+    background: #AF8C6C;
+    color: #281C19;
+    border-radius: 62px;
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    font-family: 'PT Sans Bold';
+}
+
+
+/* HELP */
+
+.help-container {
+    width: 85%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+.help-header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.help-header-container h1{
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2vw;
+    text-align: center;
+    color: #281c19;
+    margin-bottom: 10px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.help-faq-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.help-faq-container p{
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.25vw;
+    text-align: center;
+    color: #281c19;
+    margin: 0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.help-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.help-content-title {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-size: 1vw;
+    text-align: center;
+    color: #281c19;
+    margin: 0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 10px;
+}
+
+.help-content-body{
+    padding: 5px;
+    font-family: "PT Sans";
+    background: rgba(157, 95, 58, 0.61);
+    overflow-wrap: break-word;
+    font-size: 1vw;
+}
+
+.help-hmq-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.help-hmq-container p{
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1vw;
+    text-align: center;
+    color: #281c19;
+    margin: 0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.help-sendemail-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    
+}
+
+.help-sendemail-container p{
+    font-family: "PT Sans";
+    font-style: normal;
+    font-size: 1vw;
+    text-align: center;
+    color: #281c19;
+    margin: 0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.help-sendemail-container span{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: #653F26;
+}
