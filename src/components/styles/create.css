@@ -250,12 +250,12 @@ font-size: 1vw;
 }
 
 .create-intro img {
-    width: 25vw;
-    height: 25vw;
+    width: 15vw;
+    height: 15vw;
 }
 
 .create-intro h2 {
-    font-size: 5vw;
+    font-size: 3vw;
     color: #281C19;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin-top: 10px;
@@ -263,7 +263,7 @@ font-size: 1vw;
 }
 
 .create-intro p {
-    font-size: 2vw;
+    font-size: 2.75vw;
     color: #281C19;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin:0;   
@@ -276,7 +276,7 @@ font-size: 1vw;
     width: 20vw;
     padding: 0px;
     height: 7vw;
-    font-size: 2.5vw;
+    font-size: 2vw;
     text-align: center;
     font-family: 'PT Sans Bold';
     font-weight: 500;
