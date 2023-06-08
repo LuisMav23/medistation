@@ -63,8 +63,8 @@
 }
 
 .bar-item-image {
-    width: 15px;
-    height: 15px;
+    width: 30px;
+    height: 30px;
     margin-right: 20px;
     margin-left: 30px;
     align-self: center;
@@ -81,7 +81,16 @@
 }
 
 .bar-item-logout {
+    all:initial;
     margin-top: 20%;
+    cursor: pointer;
+    display: flex;
+}
+
+.bar-item-logout:hover {
+    all:initial;
+    margin-top: 20%;
+    background-color: #EDE6DE;
     cursor: pointer;
     display: flex;
 }

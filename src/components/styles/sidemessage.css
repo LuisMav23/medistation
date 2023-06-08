@@ -10,10 +10,14 @@
     align-items: center;
 }
 
-
 .logo-image {
-    width: 35%;
-    height: 35%;
+    width: 15px;
+    height: 15px; 
+}
+
+.logo-image-side {
+    width: 10vw;
+    height: 10vw;
 }
 
 .medistation-h1{
