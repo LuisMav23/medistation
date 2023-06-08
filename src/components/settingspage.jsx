@@ -84,7 +84,16 @@ const SettingsPage = () => {
             </div>
             <div class="vertical-line"></div>
             <div class="main-settings-container">
-              {selected === "Edit Profile" && <EditProfile />}
+              {selected === "Edit Profile" && (
+                <EditProfile
+                  username="Serlindipity"
+                  firstName="Erlin Joy"
+                  lastName="Fernandez"
+                  email="erlinguine@gmail.com"
+                  bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed"
+                  pronouns="She/Her"
+                />
+              )}
               {selected === "Change Password" && <ChangePassword />}
               {selected === "Privacy Security" && <PrivacySecurity />}
               {selected === "Help" && <Help />}
@@ -173,7 +182,7 @@ const Help = () => {
           </p>
           <div class="help-content-body">
             Some brands have this common misconception that social media is a
-            place full of negativity. Even if it were so, it’s better to know
+            place full of negativity. Even if it were so, it's better to know
             that there is a place where customers express all sorts of opinions,
             rather than being oblivious. When it comes to handling this type of
             comments, we suggest that the victim should report the said comment
@@ -194,7 +203,30 @@ const Help = () => {
   );
 };
 
-const EditProfile = () => {
+const EditProfile = ({
+  username: initialUsername,
+  firstName: initialFirstName,
+  lastName: initialLastName,
+  email: initialEmail,
+  bio: initialBio,
+  pronouns: initialPronouns,
+}) => {
+  const [username, setUsername] = useState(initialUsername);
+  const [firstName, setFirstName] = useState(initialFirstName);
+  const [lastName, setLastName] = useState(initialLastName);
+  const [email, setEmail] = useState(initialEmail);
+  const [bio, setBio] = useState(initialBio);
+  const [pronouns, setPronouns] = useState(initialPronouns);
+
+  const [bioText, setBioText] = useState(bio);
+
+  const handleBioChange = (event) => {
+    const text = event.target.value;
+    if (text.length <= 60) {
+      setBioText(text);
+    }
+  };
+
   return (
     <>
       <div class="editprofile-container">
@@ -203,14 +235,19 @@ const EditProfile = () => {
             <div class="editprofile-image-container">
               <img src={Profile} alt="Profile" class="editprofile-image" />
             </div>
-            <div class="editprofile-username">Serlindipity</div>
+            <div class="editprofile-username">{username}</div>
           </div>
         </div>
         <div class="editprofile-content-container">
           <div class="edit-username-container">
             <div class="edit-username-side-text">Username</div>
             <div class="edit-username-input-container">
-              <input type="text" class="edit-username-input" />
+              <input
+                type="text"
+                class="edit-username-input"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+              />
               <div class="edit-username-input-description">
                 You can change & update your username in this section.
               </div>
@@ -218,12 +255,24 @@ const EditProfile = () => {
           </div>
           <div class="edit-firstname-container">
             <div class="edit-firstname-side-text">First Name</div>
-            <input type="text" class="edit-firstname-input" />
+            <div class="edit-firstname-input-container">
+              <input
+                type="text"
+                class="edit-firstname-input"
+                value={firstName}
+                onChange={(e) => setFirstName(e.target.value)}
+              />
+            </div>
           </div>
           <div class="edit-lastname-container">
-          <div class="edit-lastname-side-text">Last Name</div>
+            <div class="edit-lastname-side-text">Last Name</div>
             <div class="edit-lastname-input-container">
-              <input type="text" class="edit-lastname-input" />
+              <input
+                type="text"
+                class="edit-lastname-input"
+                value={lastName}
+                onChange={(e) => setLastName(e.target.value)}
+              />
               <div class="edit-first-lastname-input-description">
                 You are only allowed to change your first & last name once a
                 month, make sure you entered the right names.
@@ -233,7 +282,12 @@ const EditProfile = () => {
           <div class="edit-email-container">
             <div class="edit-email-side-text">Email</div>
             <div class="edit-email-input-container">
-              <input type="text" class="edit-email-input" />
+              <input
+                type="text"
+                class="edit-email-input"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
               <div class="edit-email-input-description">
                 You can update & confirm your email in this section.
               </div>
@@ -242,20 +296,31 @@ const EditProfile = () => {
           <div class="edit-bio-container">
             <div class="edit-bio-side-text">Bio</div>
             <div class="edit-bio-input-container">
-              <textarea class="edit-bio-input" />
-              <div class="edit-bio-input-description">53 / 60</div>
+              <textarea
+                class="edit-bio-input"
+                value={bio}
+                onChange={(e) => setBio(e.target.value)}
+              />
+              <div class="edit-bio-input-description">
+                {bioText.length} / 60
+              </div>
             </div>
           </div>
           <div class="edit-pronouns-container">
             <div class="edit-pronouns-side-text">Pronouns</div>
             <div class="edit-pronouns-input-container">
-              <input type="text" class="edit-pronouns-input" />
+              <input
+                type="text"
+                class="edit-pronouns-input"
+                value={pronouns}
+                onChange={(e) => setPronouns(e.target.value)}
+              />
             </div>
           </div>
         </div>
         <div class="editprofile-save-button-container">
-            <button>Save</button>
-            </div>
+          <button class="edit-save-button">Save</button>
+        </div>
       </div>
     </>
   );

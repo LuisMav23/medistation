@@ -391,9 +391,10 @@
 .edit-bio-input,
 .edit-pronouns-input {
   background-color: rgba(157, 95, 58, 0.61);
-  color: #fff;
+  color: #281C19;
   border: none;
   height: 25px;
+  width: 350px;
 }
 
 .edit-username-input-description,
@@ -401,11 +402,11 @@
 .edit-email-input-description,
 .edit-bio-input-description,
 .edit-pronouns-input-decription {
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  color: #281C19;
+  color: #281c19;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align: justify;
 }
@@ -415,5 +416,65 @@
 }
 
 .edit-lastname-side-text {
- width: 19%;
+  width: 16.5%;
 }
+
+.edit-email-container {
+  margin-left: 45px;
+}
+
+.edit-bio-container {
+  margin-left: 66px;
+}
+
+.edit-pronouns-container {
+  margin-left: 14px;
+}
+
+.edit-username-container {
+  margin-left: 7px;
+}
+
+.edit-username-input-container,
+.edit-firstname-input-container,
+.edit-lastname-input-container,
+.edit-email-input-container,
+.edit-bio-input-container,
+.edit-pronouns-input-container {
+  margin-left: 12px;
+  width: 300px;
+}
+
+.edit-first-lastname-input-description{
+  width: 350px;
+}
+
+.edit-bio-input{
+  resize: none;
+  height: 50px;
+}
+
+.editprofile-save-button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 104px;
+}
+
+.edit-save-button{
+  background-color: #AF8C6C;
+border-radius: 54px;
+cursor: pointer;
+border: none;
+color: #281C19;
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+/* identical to box height */
+text-align: center;
+width: 70px;
+height: 30px;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
