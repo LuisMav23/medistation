@@ -62,7 +62,7 @@ const ProfileHeader = ({
       </div>
       <div class="post-follower-following-container">
         <div class="profile-post-count"><b>{posts}</b> posts</div>
-        <div class="profile-followers-count"><b>{followers}</b> followers</div>
+        <div class="profile-followers   -count"><b>{followers}</b> followers</div>
         <div class="profile-following-count"><b>{following}</b> following</div>
       </div>
       <div class="profile-name-gender-container">
