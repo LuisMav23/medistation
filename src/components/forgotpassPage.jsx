@@ -8,10 +8,21 @@ import Logo from './assets/logo.png'
 
 
 const Login = () => {
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+    useEffect(() => {
+      window.addEventListener('resize', handleResize);
+  
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }, []);
   return (
     <>
     <div class="main-container">
-        <SideMessage/>
+    {screenWidth >= 768 && <SideMessage />}
         <ForgotPassword/>
     </div>
     </>
@@ -19,6 +30,7 @@ const Login = () => {
 }
 
 const SideMessage = () => {
+    
     const navigate = useNavigate();
 
     const handleSignUpButtonClick = () => {

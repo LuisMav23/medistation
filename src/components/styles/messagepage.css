@@ -376,7 +376,7 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
-    font-size: 6vw;
+    font-size: 4.5vw;
     text-align: center;
     color: #281c19;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -533,8 +533,8 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
   
   .your-messages-image {
-    width: 30vw;
-    height: 30vw;
+    width: 15vw;
+    height: 15vw;
     margin-bottom: 10px;
   }
   
@@ -542,7 +542,7 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
-    font-size: 10vw;
+    font-size: 3vw;
     text-align: center;
     color: #281c19;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -553,7 +553,7 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
-    font-size:  7vw;
+    font-size:  2.75vw;
     text-align: center;
     color: #281c19;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -563,8 +563,8 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
   
   .your-messages-button {
-    width: 200px;
-    height: 32px;
+    width: 125px;
+    height: 28px;
     background-color: #af8c6c;
     border-radius: 54px;
     border: none;
@@ -574,7 +574,7 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 23px;
     text-align: center;
   
