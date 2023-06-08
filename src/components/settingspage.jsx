@@ -86,7 +86,7 @@ const SettingsPage = () => {
             <div class="main-settings-container">
               {selected === "Edit Profile" && (
                 <EditProfile
-                  username="Serlindipity"
+                  editusername="Serlindipity"
                   firstName="Erlin Joy"
                   lastName="Fernandez"
                   email="erlinguine@gmail.com"
@@ -139,7 +139,7 @@ const PrivacySecurity = () => {
           accounts.
         </div>
         <div class="save-button-container">
-          <button>Save</button>
+          <button class="privacy-save">Save</button>
         </div>
       </div>
     </>
@@ -204,20 +204,19 @@ const Help = () => {
 };
 
 const EditProfile = ({
-  username: initialUsername,
+  editusername: initialUsername,
   firstName: initialFirstName,
   lastName: initialLastName,
   email: initialEmail,
   bio: initialBio,
   pronouns: initialPronouns,
 }) => {
-  const [username, setUsername] = useState(initialUsername);
+  const [editusername, setUsername] = useState(initialUsername);
   const [firstName, setFirstName] = useState(initialFirstName);
   const [lastName, setLastName] = useState(initialLastName);
   const [email, setEmail] = useState(initialEmail);
   const [bio, setBio] = useState(initialBio);
   const [pronouns, setPronouns] = useState(initialPronouns);
-
   const [bioText, setBioText] = useState(bio);
 
   const handleBioChange = (event) => {
@@ -235,7 +234,7 @@ const EditProfile = ({
             <div class="editprofile-image-container">
               <img src={Profile} alt="Profile" class="editprofile-image" />
             </div>
-            <div class="editprofile-username">{username}</div>
+            <div class="editprofile-username">{editusername}</div>
           </div>
         </div>
         <div class="editprofile-content-container">
@@ -245,7 +244,7 @@ const EditProfile = ({
               <input
                 type="text"
                 class="edit-username-input"
-                value={username}
+                value={editusername}
                 onChange={(e) => setUsername(e.target.value)}
               />
               <div class="edit-username-input-description">
@@ -299,7 +298,11 @@ const EditProfile = ({
               <textarea
                 class="edit-bio-input"
                 value={bio}
-                onChange={(e) => setBio(e.target.value)}
+                onChange={(e) => {
+                  setBio(e.target.value);
+                  handleBioChange(e); // Call handleBioChange separately
+                }}
+                maxLength={60}
               />
               <div class="edit-bio-input-description">
                 {bioText.length} / 60
@@ -326,8 +329,57 @@ const EditProfile = ({
   );
 };
 
-const ChangePassword = () => {
-  return <>hi</>;
+const ChangePassword = ({ username }) => {
+  return (
+    <>
+      <div class="changepassword-container">
+        <div class="changepassword-header-container">
+          <div class="changepassword-image-username-container">
+            <div class="changepassword-image-container">
+              <img src={Profile} alt="Profile" class="changepassword-image" />
+            </div>
+            <div class="changepassword-username">Username</div>
+          </div>
+        </div>
+        <div class="changepassword-content-container">
+          <div class="changepassword-oldpassword-container">
+            <div class="changepassword-oldpassword-side-text">Old Password</div>
+            <div class="changepassword-oldpassword-input-container">
+              <input type="password" class="changepassword-oldpassword-input" />
+              <div class="changepassword-oldpassword-input-description">
+                Please enter your old password.
+              </div>
+            </div>
+          </div>
+          <div class="changepassword-newpassword-container">
+            <div class="changepassword-newpassword-side-text">New Password</div>
+            <div class="changepassword-newpassword-input-container">
+              <input type="password" class="changepassword-newpassword-input" />
+            </div>
+          </div>
+          <div class="changepassword-confirmnewpassword-container">
+            <div class="changepassword-confirmnewpassword-side-text">
+              Confirm New Password
+            </div>
+            <div class="changepassword-confirmnewpassword-input-container">
+              <input
+                type="password"
+                class="changepassword-confirmnewpassword-input"
+              />
+              <div class="changepassword-confirmnewpassword-input-description">
+                Please enter your desired new password & confirm it. Password
+                must consist with 8 characters and special elements
+              </div>
+            </div>
+          </div>
+          <div class="changepassword-save-button-container">
+            <button class="changepassword-save-button">Change password</button>
+            <div class="forgot-password-text">Forgotten Your Password?</div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 };
 
 export default SettingsPage;
