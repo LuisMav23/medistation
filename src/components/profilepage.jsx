@@ -24,7 +24,6 @@ function ProfilePage() {
             gender="she/her"
             bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed"
           />
-
           <div class="profilepage-posts-container">
             <PostGrid/>
             <PostGrid/>
@@ -33,8 +32,7 @@ function ProfilePage() {
             <PostGrid/>
             <PostGrid/>
             </div>
-        </div>
-        
+        </div> 
       </div>
     </>
   );
@@ -62,7 +60,7 @@ const ProfileHeader = ({
       </div>
       <div class="post-follower-following-container">
         <div class="profile-post-count"><b>{posts}</b> posts</div>
-        <div class="profile-followers   -count"><b>{followers}</b> followers</div>
+        <div class="profile-followers-count"><b>{followers}</b> followers</div>
         <div class="profile-following-count"><b>{following}</b> following</div>
       </div>
       <div class="profile-name-gender-container">
