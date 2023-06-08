@@ -37,15 +37,17 @@ function MessagePage() {
     <>
       <TopBar />
       <div class="mainpage-container">
-      {screenWidth >= 768 && <NavigationBar selected={"Messages"} />}
+        {screenWidth >= 501 && <NavigationBar selected={"Messages"} />}
         <div class="messagepage-container">
-        {screenWidth <= 768 && <NavBarMobile selected={"Messages"} />}
+          {screenWidth <= 501 && <NavBarMobile selected={"Messages"} />}
           <div class="message-box-container">
             <div class="friends-container">
-              <div class="friends-header">
+                <div class="friends-header">
                 <p class="friends-header-text">Serlindipity</p>
               </div>
-              <div class="horizontal-line"></div>
+
+             
+              {screenWidth >= 768 &&  <div class="horizontal-line"></div>}
               <div class="messages-request-container">
                 <p class="messages-text">Messages</p>
                 <p class="requests-text">Requests</p>
@@ -88,8 +90,8 @@ function MessagePage() {
                   }}
                 />
               </div>
+              <div class="horizontal-line"></div>
             </div>
-            <div class="vertical-line"></div>
             <div class="friends-messages">
               {selectedFriend ? (
                 <Message
@@ -110,16 +112,30 @@ function MessagePage() {
 }
 
 const FriendsList = ({ username, status, image, onClick }) => {
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const handleResize = () => {
+    setScreenWidth(window.innerWidth);
+  };
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <div class="friend" onClick={onClick}>
       <div class="friend-image-container">
         <img class="friend-image" src={image} alt="friend" />
         {status === "Active now" && <div className="active-now"></div>}
       </div>
-      <div class="friend-status-container">
-        <p class="friend-username">{username}</p>
-        <p class="friend-status">{status}</p>
-      </div>
+      {screenWidth >= 768 &&
+        <div class="friend-status-container">
+          <p class="friend-username">{username}</p>
+          <p class="friend-status">{status}</p>
+        </div>
+      }
+
     </div>
   );
 };

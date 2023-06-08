@@ -3,28 +3,42 @@ import "./styles/mainpage.css";
 import "./styles/profilepage.css";
 
 import NavigationBar from "./navigationBar";
+import NavBarMobile from "./navBarMobile";
 import TopBar from "./topBar";
 
 import Image from "./assets/profile-you.png";
 import Settings from "./assets/icons/settings-icon.png";
 
 function ProfilePage() {
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const handleResize = () => {
+    setScreenWidth(window.innerWidth);
+  };
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <>
       <TopBar />
       <div class="mainpage-container">
-        <NavigationBar selected={"Profile"} />
+      {screenWidth >= 768 && <NavigationBar selected={"Profile"} /> }
+        
         <div class="profilepage-container">
+        {screenWidth <= 768 && <NavBarMobile selected={"Profile"} />}
           <ProfileHeader
             username="Serlindipty"
             posts="9"
             followers="5"
-            following="5"
+            following="5" 
             name="Erlin Joy Fernandez"
             gender="she/her"
             bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed"
           />
-
           <div class="profilepage-posts-container">
             <PostGrid/>
             <PostGrid/>
@@ -33,8 +47,7 @@ function ProfilePage() {
             <PostGrid/>
             <PostGrid/>
             </div>
-        </div>
-        
+        </div> 
       </div>
     </>
   );
