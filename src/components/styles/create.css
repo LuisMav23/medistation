@@ -1,7 +1,7 @@
 @import url("./fonts.css");
 
 .create-page-container{
-    width: 80%;
+    width: 60%;
     overflow: auto;
     display: flex;
     flex-direction: column; 
