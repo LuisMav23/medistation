@@ -59,6 +59,7 @@
     text-align: center;
     font-family: 'PT Sans';
     font-weight: 500;
+    cursor: pointer;
 }
 
 .first-last-name,
@@ -155,6 +156,7 @@ date.input {
         font-family: 'PT Sans';
         font-weight: 500;
         margin-bottom:50px;
+        cursor: pointer;
     }
 
     .first-last-name,

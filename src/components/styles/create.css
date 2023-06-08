@@ -52,6 +52,7 @@
     margin-top: 20px;
     padding-left: 10px;
     padding-right: 10px;
+    cursor: pointer;
 }
 
 .create-crop {
@@ -96,7 +97,7 @@
     color: #653F26;
     font-weight: 800;
     margin-right: 10px;
-
+    cursor: pointer;
 }
 
 .create-crop-window-header button img{
