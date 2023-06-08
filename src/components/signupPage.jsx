@@ -6,23 +6,28 @@ import "./styles/startup.css";
 
 import Logo from "./assets/logo.png";
 
-
-
 const Signup = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-    const handleResize = () => {
-        setScreenWidth(window.innerWidth);
-    };
-    useEffect(() => {
-        window.addEventListener('resize', handleResize);
+
+  // Update the screenWidth state when the window is resized
+  const handleResize = () => {
+    setScreenWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    // Add event listener for window resize
+    window.addEventListener('resize', handleResize);
     
-        return () => {
-          window.removeEventListener('resize', handleResize);
-        };
-      }, []);
+    return () => {
+      // Clean up by removing event listener on component unmount
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <>
       <div className="main-container">
+        {/* Render SideMessage component only if the screenWidth is greater than or equal to 768 */}
         {screenWidth >= 768 && <SideMessage />}
         <MainSignup />
       </div>
@@ -36,6 +41,7 @@ const SideMessage = () => {
   const handleLoginButtonClick = () => {
     navigate("/");
   };
+
   return (
     <div className="side-message-container">
       <img className="logo-image-side " src={Logo} alt="My Image" />
@@ -46,7 +52,7 @@ const SideMessage = () => {
         <br />
         elit, sed do eiusmod aliqua.
       </p>
-        <button className="signup-button" onClick={handleLoginButtonClick}>LOG IN</button>
+      <button className="signup-button" onClick={handleLoginButtonClick}>LOG IN</button>
     </div>
   );
 };
@@ -59,21 +65,27 @@ const MainSignup = () => {
   };
 
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-    const handleResize = () => {
-        setScreenWidth(window.innerWidth);
-    };
-    useEffect(() => {
-        window.addEventListener('resize', handleResize);
+
+  // Update the screenWidth state when the window is resized
+  const handleResize = () => {
+    setScreenWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    // Add event listener for window resize
+    window.addEventListener('resize', handleResize);
     
-        return () => {
-          window.removeEventListener('resize', handleResize);
-        };
-      }, []);
+    return () => {
+      // Clean up by removing event listener on component unmount
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <div className="main-signup-container">
-      {screenWidth <= 768 && <img class="logo-image" src={Logo} alt="My Image"/>}
-      {screenWidth <= 768 && <h1 class="medistation-h1">MEDISTATION</h1>}
+      {/* Render logo image and title only if the screenWidth is less than or equal to 768 */}
+      {screenWidth <= 768 && <img className="logo-image" src={Logo} alt="My Image" />}
+      {screenWidth <= 768 && <h1 className="medistation-h1">MEDISTATION</h1>}
       <h1 className="login-h1">Sign Up Now!</h1>
       <p className="login-sub">
         start your relaxing and mindful journey with us.
@@ -83,24 +95,24 @@ const MainSignup = () => {
         <input type="text" className="input" placeholder="First Name"></input>
         <input type="text" className="input" placeholder="Last Name"></input>
       </div>
-        <input type="email" className="input" placeholder="Email"></input>
-        <input type="password" className="input" placeholder="Pasword"></input>
+      <input type="email" className="input" placeholder="Email"></input>
+      <input type="password" className="input" placeholder="Password"></input>
       <div className="birthday-gender">
-      <input
-        type="date"
-        className="input"
-        placeholder="Birthday"
-        id="dateInput"
-        value={selectedDate}
-        onChange={handleDateChange}
-      />
-      <select className="input">
-        <option value="" disabled selected hidden>
-          Gender
-        </option>
-        <option value="male">Male</option>
-        <option value="female">Fiemale</option>
-      </select>  
+        <input
+          type="date"
+          className="input"
+          placeholder="Birthday"
+          id="dateInput"
+          value={selectedDate}
+          onChange={handleDateChange}
+        />
+        <select className="input">
+          <option value="" disabled selected hidden>
+            Gender
+          </option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>  
       </div>
       <button className="signin-button">SIGN UP</button>
     </div>

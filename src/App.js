@@ -16,17 +16,35 @@ function App() {
   return (
     <Router>
       <Routes>
+        {/* Route for the login page */}
         <Route exact path="/" Component={Login}/>
-        <Route exact path="/signup" Component={Signup}/>
-        <Route exact path="/forgot-password" Component={Forgot}/>
-        <Route exact path="/homepage" Component={HomePage}/>
-        <Route exact path="/search" Component={SearchPage}/>
-        <Route exact path="/messages" Component={MessagePage}/>
-        <Route exact path="/notifications" Component={NotificationPage}/>
-        <Route exact path="/create" Component={CreatePage}/>
-        <Route exact path="/profile" Component={ProfilePage}/>
-        <Route exact path="/settings" Component={SettingsPage}/>
         
+        {/* Route for the signup page */}
+        <Route exact path="/signup" Component={Signup}/>
+        
+        {/* Route for the forgot password page */}
+        <Route exact path="/forgot-password" Component={Forgot}/>
+        
+        {/* Route for the homepage */}
+        <Route exact path="/homepage" Component={HomePage}/>
+        
+        {/* Route for the search page */}
+        <Route exact path="/search" Component={SearchPage}/>
+        
+        {/* Route for the messages page */}
+        <Route exact path="/messages" Component={MessagePage}/>
+        
+        {/* Route for the notifications page */}
+        <Route exact path="/notifications" Component={NotificationPage}/>
+        
+        {/* Route for the create page */}
+        <Route exact path="/create" Component={CreatePage}/>
+        
+        {/* Route for the profile page */}
+        <Route exact path="/profile" Component={ProfilePage}/>
+        
+        {/* Route for the settings page */}
+        <Route exact path="/settings" Component={SettingsPage}/>
       </Routes>
     </Router>
   );
