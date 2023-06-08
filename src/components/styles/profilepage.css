@@ -71,13 +71,14 @@
   font-size: 0.75vw;
   line-height: 23px;
   text-align: center;
-
+  cursor: pointer;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .profile-settings-icon {
   width: 1.75vw;
   height: 1.75vw;
+  cursor: pointer;
 }
 
 .post-follower-following-container {
