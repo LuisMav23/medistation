@@ -1,309 +1,419 @@
-@import url('fonts.css');
+@import url("fonts.css");
 
-.settings-main-container{
-    width: 70%;
-    overflow: auto;
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center;
+.settings-main-container {
+  width: 70%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.settings-container{
-    margin-top: 2%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 96%;
-    width: 90%;
-    background-color: #d6c8b7;
+.settings-container {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 96%;
+  width: 90%;
+  background-color: #d6c8b7;
 }
 
 .settings-option-container {
-    width: 35%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+  width: 35%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .main-settings-container {
-    width: 65%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: auto;
+  width: 65%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
 }
 
 .settings-option {
-    all: initial;
-    width:100%;
-    cursor: pointer;
-    display: flex;
-    margin: 0;
-    justify-content: center;
-    align-items: center;
+  all: initial;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
 }
 
 .settings-option:hover {
-    all: initial;
-    width:100%;
-    cursor: pointer;
-    background-color: #EDE6DE;
-    display: flex;
-    margin: 0;
-    justify-content: center;
-    align-items: center;
+  all: initial;
+  width: 100%;
+  cursor: pointer;
+  background-color: #ede6de;
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
 }
 
 .settings-option.selected {
-    all: initial;
-    width:100%;
-    background-color: #C7B9A8;
-    cursor: pointer;
-    display: flex;
-    margin: 0;
-    justify-content: center;
-    align-items: center;
+  all: initial;
+  width: 100%;
+  background-color: #c7b9a8;
+  cursor: pointer;
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
 }
 
-.settings-header{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 10%;
-    padding-left: 10%;
+.settings-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 10%;
+  padding-left: 10%;
 }
 
 .settings-option-text {
-    font-family: 'PT Sans';
-    font-style: normal;
-    font-weight: 400;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
 }
 
 .settings-header-text {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 2vw;
-    text-align: center;
-    color: #281c19;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2vw;
+  text-align: center;
+  color: #281c19;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .settings-image {
-    width: 2vw;
-    height: 2vw;
-    margin-right: 10px;
+  width: 2vw;
+  height: 2vw;
+  margin-right: 10px;
 }
 
 /* PRIVACY */
 .privsec-container {
-    width: 85%;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;    
+  width: 85%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-.privsec-header-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+.privsec-header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.privsec-header-container h1{
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 2vw;
-    text-align: center;
-    color: #281c19;
-    margin-bottom: 10px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.privsec-header-container h1 {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2vw;
+  text-align: center;
+  color: #281c19;
+  margin-bottom: 10px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .privsec-content-header-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.privsec-content-header-container p{
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 1.25vw;
-    text-align: center;
-    color: #281c19;
-    margin: 0;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-bottom: 5px;
-    margin-top: 10px;
+.privsec-content-header-container p {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.25vw;
+  text-align: center;
+  color: #281c19;
+  margin: 0;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 5px;
+  margin-top: 10px;
 }
 
-.privsec-content-header-container input{
-    width: 1vw;
-    height: 1vw;
-    margin-bottom: 5px;
-    margin-top: 10px;
+.privsec-content-header-container input {
+  width: 1vw;
+  height: 1vw;
+  margin-bottom: 5px;
+  margin-top: 10px;
 }
 
 .privsec-content-text {
-    padding: 5px;
-    font-family: "PT Sans";
-    overflow-wrap: break-word;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-bottom: 10px;
-    margin-top: 0;
-    font-size: 1vw;
+  padding: 5px;
+  font-family: "PT Sans";
+  overflow-wrap: break-word;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 10px;
+  margin-top: 0;
+  font-size: 1vw;
 }
 
 .save-button-container {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    margin-top: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 60px;
 }
 
-.save-button-container button{
-    all: initial;
-    background: #AF8C6C;
-    color: #281C19;
-    border-radius: 62px;
-    width: 100px;
-    height: 35px;
-    text-align: center;
-    font-family: 'PT Sans Bold';
+.save-button-container button {
+  all: initial;
+  background: #af8c6c;
+  color: #281c19;
+  border-radius: 62px;
+  width: 100px;
+  height: 35px;
+  text-align: center;
+  font-family: "PT Sans Bold";
 }
-
 
 /* HELP */
 
 .help-container {
-    width: 85%;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    
+  width: 85%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .help-header-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.help-header-container h1{
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 2vw;
-    text-align: center;
-    color: #281c19;
-    margin-bottom: 10px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.help-header-container h1 {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2vw;
+  text-align: center;
+  color: #281c19;
+  margin-bottom: 10px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .help-faq-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.help-faq-container p{
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 1.25vw;
-    text-align: center;
-    color: #281c19;
-    margin: 0;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-bottom: 30px;
-    margin-top: 10px;
+.help-faq-container p {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.25vw;
+  text-align: center;
+  color: #281c19;
+  margin: 0;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 30px;
+  margin-top: 10px;
 }
 
 .help-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 15px;
 }
 
 .help-content-title {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-size: 1vw;
-    text-align: center;
-    color: #281c19;
-    margin: 0;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-bottom: 10px;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-size: 1vw;
+  text-align: center;
+  color: #281c19;
+  margin: 0;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 10px;
 }
 
-.help-content-body{
-    padding: 5px;
-    font-family: "PT Sans";
-    background: rgba(157, 95, 58, 0.61);
-    overflow-wrap: break-word;
-    font-size: 1vw;
+.help-content-body {
+  padding: 5px;
+  font-family: "PT Sans";
+  background: rgba(157, 95, 58, 0.61);
+  overflow-wrap: break-word;
+  font-size: 1vw;
 }
 
 .help-hmq-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.help-hmq-container p{
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 1vw;
-    text-align: center;
-    color: #281c19;
-    margin: 0;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-bottom: 10px;
-    margin-top: 0px;
+.help-hmq-container p {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1vw;
+  text-align: center;
+  color: #281c19;
+  margin: 0;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 10px;
+  margin-top: 0px;
 }
 
 .help-sendemail-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-
-    
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.help-sendemail-container p{
-    font-family: "PT Sans";
-    font-style: normal;
-    font-size: 1vw;
-    text-align: center;
-    color: #281c19;
-    margin: 0;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-bottom: 10px;
-    margin-top: 0px;
+.help-sendemail-container p {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-size: 1vw;
+  text-align: center;
+  color: #281c19;
+  margin: 0;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 10px;
+  margin-top: 0px;
 }
 
-.help-sendemail-container span{
-    margin-bottom: 0px;
-    margin-top: 0px;
-    color: #653F26;
+.help-sendemail-container span {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  color: #653f26;
+}
+
+.editprofile-container {
+  height: 96%;
+  width: 90%;
+}
+
+.editprofile-header-container {
+}
+
+.editprofile-image-username-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.editprofile-image-container {
+  height: 60px;
+  width: 60px;
+  background-color: #532500;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.editprofile-image {
+  height: 50px;
+  width: 50px;
+}
+
+.editprofile-username {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #281c19;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  align-self: center;
+  margin-left: 15px;
+}
+
+.editprofile-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.edit-username-container,
+.edit-firstname-container,
+.edit-lastname-container,
+.edit-email-container,
+.edit-bio-container,
+.edit-pronouns-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: left;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.edit-username-side-text,
+.edit-firstname-side-text,
+.edit-lastname-side-text,
+.edit-email-side-text,
+.edit-bio-side-text,
+.edit-pronouns-side-text {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  color: #281c19;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: right;
+}
+
+.edit-username-input,
+.edit-firstname-input,
+.edit-lastname-input,
+.edit-email-input,
+.edit-bio-input,
+.edit-pronouns-input {
+  background-color: rgba(157, 95, 58, 0.61);
+  color: #fff;
+  border: none;
+  height: 25px;
+}
+
+.edit-username-input-description,
+.edit-first-lastname-input-description,
+.edit-email-input-description,
+.edit-bio-input-description,
+.edit-pronouns-input-decription {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #281C19;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: justify;
+}
+
+.edit-first-lastname-input-description {
+  width: 70%;
+}
+
+.edit-lastname-side-text {
+ width: 19%;
 }
