@@ -27,7 +27,7 @@ const SideMessage = () => {
 
     return (
         <div class="side-message-container">
-            <img class="logo-image" src={Logo} alt="My Image"/>
+            <img class="logo-image-side " src={Logo} alt="My Image"/>
             <h1 class="medistation-h1">MEDISTATION</h1>
             <div class="strip">
                 New Here?
