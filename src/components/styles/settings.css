@@ -1086,7 +1086,7 @@ cursor: pointer;
   .edit-bio-input-container,
   .edit-pronouns-input-container {
     margin-left: 12px;
-    width: 300px;
+    width: 20vw;
   }
   
   .edit-first-lastname-input-description {

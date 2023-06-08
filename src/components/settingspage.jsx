@@ -31,9 +31,9 @@ const SettingsPage = () => {
         <TopBar />
       </div>
       <div class="mainpage-container">
-        {screenWidth >= 768 && <NavigationBar selected={"Home"} />}
+        {screenWidth >= 768 && <NavigationBar selected={"Settings"} />}
         <div class="settings-main-container">
-          {screenWidth <= 768 && <NavBarMobile selected={"Home"} />}
+          {screenWidth <= 768 && <NavBarMobile selected={"Settings"} />}
           <div class="settings-container">
             <div class="settings-option-container">
               <div class="settings-header">
