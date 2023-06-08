@@ -2,8 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 70%;
+  width: 80%;
   height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .profilepage-header {
