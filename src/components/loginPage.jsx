@@ -7,7 +7,6 @@ import './styles/startup.css'
 
 import Logo from './assets/logo.png'
 
-import { Link } from 'react-router-dom';
 
 const Login = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);

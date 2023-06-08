@@ -29,15 +29,15 @@ const HomePage = () => {
   return (
     <>
       <div class="top">
-      <TopBar />
+        <TopBar />
       </div>
       <div class="mainpage-container">
         {screenWidth >= 768 && <NavigationBar selected={"Home"} />}
         <div class="homepage-container">
-        {screenWidth <= 768 && <NavBarMobile selected={"Home"} />}
-        <StoriesContainer/>
-        <div class="horizontal-line"/>
-        <PostsContainer/>
+          {screenWidth <= 768 && <NavBarMobile selected={"Home"} />}
+          <StoriesContainer/>
+          <div class="horizontal-line"/>
+          <PostsContainer/>
         </div>
         {screenWidth >= 768 && <FriendsList />}
       </div>
@@ -49,18 +49,18 @@ const StoriesContainer = () => {
   return (
     <div class="stories">
       <div class="stories-container">
-              <Story username="Serlindipity" />
-              <Story username="Serlindipity" />
-              <Story username="Serlindipity" />
-              <Story username="Serlindipity" />
-              <Story username="Serlindipity" />
-              <Story username="Serlindipity" />
-              <Story username="Serlindipity" />
-              <Story username="Serlindipity" />
-              <Story username="Serlindipity" />
-              <Story username="Serlindipity" />
-              <Story username="Serlindipity" />
-              <Story username="Serlindipity" />
+        <Story username="Serlindipity" />
+        <Story username="Serlindipity" />
+        <Story username="Serlindipity" />
+        <Story username="Serlindipity" />
+        <Story username="Serlindipity" />
+        <Story username="Serlindipity" />
+        <Story username="Serlindipity" />
+        <Story username="Serlindipity" />
+        <Story username="Serlindipity" />
+        <Story username="Serlindipity" />
+        <Story username="Serlindipity" />
+        <Story username="Serlindipity" />
       </div>
     </div>
   );
@@ -69,10 +69,10 @@ const StoriesContainer = () => {
 const PostsContainer = () => {
   return (
     <div class="posts-container">
-            <Post username="Marebik" location="Kathmandu" time="2h" />
-            <Post username="Marebik" location="Kathmandu" time="2h" />
-            <Post username="Marebik" location="Kathmandu" time="2h" />
-          </div>
+      <Post username="Marebik" location="Kathmandu" time="2h" />
+      <Post username="Marebik" location="Kathmandu" time="2h" />
+      <Post username="Marebik" location="Kathmandu" time="2h" />
+    </div>
   );
 };
 
@@ -104,19 +104,19 @@ const Post = ({ username, location, time, image }) => {
       <img class="post-image" src={PostImage} alt="post-image" />
       <div class="like-comment-container">
         <div class="like-container">
-          <img class="like-image" src={Like} alt="like  " />
+          <img class="like-image" src={Like} alt="like" />
           <p class="like-by">Liked by <b>Marebik</b></p>
         </div>
         <div class="comment-number-container">
           <p class="comment-number"><b>2</b> comments</p>
           <img class="comment-image" src={Comment} alt="comment" />
-          </div>
         </div>
-        <div class="comment-container">
-          <div class="comment-username"><b>Marebik</b></div>
-          <div class="comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-          <div class="see-more">See more</div>
-          </div>
+      </div>
+      <div class="comment-container">
+        <div class="comment-username"><b>Marebik</b></div>
+        <div class="comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+        <div class="see-more">See more</div>
+      </div>
     </div>
   );
 };
