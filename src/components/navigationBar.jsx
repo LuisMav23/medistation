@@ -49,10 +49,10 @@ const NavigationBar = ({ selected }) => {
             <img class="bar-item-image" src={Settings} alt="Settings" />
               <p class="bar-item-text">Settings</p>
             </button>
-            <div class="bar-item-logout">
+            <button class="bar-item-logout"  onClick={()=>{navigate('/')}}>
           <img class="bar-item-image" src={Logout} alt="Logout" />
           <p class="bar-item-text">SIGN OUT</p>
-          </div>
+          </button>
           </div>
         </div>
     );

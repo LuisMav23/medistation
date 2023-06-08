@@ -81,7 +81,16 @@
 }
 
 .bar-item-logout {
+    all:initial;
     margin-top: 20%;
+    cursor: pointer;
+    display: flex;
+}
+
+.bar-item-logout:hover {
+    all:initial;
+    margin-top: 20%;
+    background-color: #EDE6DE;
     cursor: pointer;
     display: flex;
 }
