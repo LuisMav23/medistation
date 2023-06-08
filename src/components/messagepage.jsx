@@ -37,9 +37,9 @@ function MessagePage() {
     <>
       <TopBar />
       <div class="mainpage-container">
-        {screenWidth >= 400 && <NavigationBar selected={"Messages"} />}
+        {screenWidth >= 501 && <NavigationBar selected={"Messages"} />}
         <div class="messagepage-container">
-          {screenWidth <= 400 && <NavBarMobile selected={"Messages"} />}
+          {screenWidth <= 501 && <NavBarMobile selected={"Messages"} />}
           <div class="message-box-container">
             <div class="friends-container">
                 <div class="friends-header">
