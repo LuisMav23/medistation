@@ -42,12 +42,11 @@ function MessagePage() {
           {screenWidth <= 501 && <NavBarMobile selected={"Messages"} />}
           <div class="message-box-container">
             <div class="friends-container">
-                <div class="friends-header">
+              <div class="friends-header">
                 <p class="friends-header-text">Serlindipity</p>
               </div>
 
-             
-              {screenWidth >= 768 &&  <div class="horizontal-line"></div>}
+              {screenWidth >= 768 && <div class="horizontal-line"></div>}
               <div class="messages-request-container">
                 <p class="messages-text">Messages</p>
                 <p class="requests-text">Requests</p>
@@ -129,13 +128,12 @@ const FriendsList = ({ username, status, image, onClick }) => {
         <img class="friend-image" src={image} alt="friend" />
         {status === "Active now" && <div className="active-now"></div>}
       </div>
-      {screenWidth >= 768 &&
+      {screenWidth >= 768 && (
         <div class="friend-status-container">
           <p class="friend-username">{username}</p>
           <p class="friend-status">{status}</p>
         </div>
-      }
-
+      )}
     </div>
   );
 };
@@ -162,8 +160,7 @@ const Message = ({ username, message, image, status }) => {
         <div class="message-header-left">
           <div class="message-header-image-container">
             <img class="message-header-image" src={image} alt="friend" />
-            {status === "Active now" && <div className="message-
-            active-now"></div>}
+            {status === "Active now" && <div className="message-active-now"></div>}
           </div>
           <div class="message-header-details">
             <p class="message-header-username">{username}</p>
