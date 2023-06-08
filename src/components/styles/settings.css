@@ -35,7 +35,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .settings-option {
@@ -173,6 +174,10 @@
   margin-top: 60px;
 }
 
+.privacy-save{
+  
+}
+
 .save-button-container button {
   all: initial;
   background: #af8c6c;
@@ -182,6 +187,7 @@
   height: 35px;
   text-align: center;
   font-family: "PT Sans Bold";
+  cursor: pointer;
 }
 
 /* HELP */
@@ -310,6 +316,8 @@
 }
 
 .editprofile-header-container {
+  margin-left: 27px;
+  margin-top: 35px;
 }
 
 .editprofile-image-username-container {
@@ -391,7 +399,7 @@
 .edit-bio-input,
 .edit-pronouns-input {
   background-color: rgba(157, 95, 58, 0.61);
-  color: #281C19;
+  color: #281c19;
   border: none;
   height: 25px;
   width: 350px;
@@ -445,11 +453,11 @@
   width: 300px;
 }
 
-.edit-first-lastname-input-description{
+.edit-first-lastname-input-description {
   width: 350px;
 }
 
-.edit-bio-input{
+.edit-bio-input {
   resize: none;
   height: 50px;
 }
@@ -460,21 +468,168 @@
   margin-right: 104px;
 }
 
-.edit-save-button{
-  background-color: #AF8C6C;
-border-radius: 54px;
-cursor: pointer;
-border: none;
-color: #281C19;
+.edit-save-button {
+  background-color: #af8c6c;
+  border-radius: 54px;
+  cursor: pointer;
+  border: none;
+  color: #281c19;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  /* identical to box height */
+  text-align: center;
+  width: 70px;
+  height: 30px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.changepassword-container {
+  height: 96%;
+  width: 90%;
+}
+
+.changepassword-header-container {
+  margin-left: 27px;
+  margin-top: 35px;
+}
+
+.changepassword-image-username-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.changepassword-image-container {
+  height: 60px;
+  width: 60px;
+  background-color: #532500;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.changepassword-image {
+  height: 50px;
+  width: 50px;
+}
+
+.changepassword-username {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #281c19;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  align-self: center;
+  margin-left: 15px;
+}
+
+.changepassword-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.changepassword-oldpassword-container,
+.changepassword-newpassword-container,
+.changepassword-confirmnewpassword-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: left;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.changepassword-oldpassword-side-text,
+.changepassword-newpassword-side-text,
+.changepassword-confirmnewpassword-side-text {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  color: #281c19;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: right;
+}
+
+.changepassword-oldpassword-input,
+.changepassword-newpassword-input,
+.changepassword-confirmnewpassword-input {
+  background-color: rgba(157, 95, 58, 0.61);
+  color: #281c19;
+  border: none;
+  height: 25px;
+  width: 350px;
+}
+
+.changepassword-oldpassword-input-description,
+.changepassword-confirmnewpassword-input-description {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #281c19;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: justify;
+}
+
+.changepassword-save-button-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 500px;
+}
+
+.changepassword-confirmnewpassword-side-text{
+  text-align: right;
+  width: 124px;
+}
+
+.changepassword-oldpassword-side-text{
+  width: 122px;
+}
+
+.changepassword-oldpassword-input-container,
+.changepassword-newpassword-input-container,
+.changepassword-confirmnewpassword-input-container {
+  margin-left: 12px;
+  width: 300px;
+}
+
+.changepassword-save-button{
+  width: 150px;
+  height: 30px;
 font-family: 'PT Sans';
 font-style: normal;
 font-weight: 700;
 font-size: 15px;
+line-height: 26px;
 /* identical to box height */
 text-align: center;
-width: 70px;
-height: 30px;
+color: #281C19;
 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
+background-color: #AF8C6C;
+border-radius: 54px;
+cursor: pointer;
 }
 
+.forgot-password-text{
+  font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 23px;
+text-align: center;
+color: #9D5F3A;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+cursor: pointer;
+}
